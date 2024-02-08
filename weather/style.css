@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-transform: capitalize;
+}
+.container{
+    background-color: transparent;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    margin-top: 20px;
+}
+input[type=text]{
+    width: 80%;
+    text-align: center;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-left: 15px;
+}
+#submit{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+}
+i{
+    color: white;
+}
+#name{
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: wavy;
+}
+.temperature{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -12px;
+    color: rgb(236, 165, 2);
+}
+#description{
+    text-align: center;
+    color: skyblue;
+}
+.images{
+    display: flex;
+    margin-top: 50px;
+}
+.right{
+    margin-inline-start: 245px;
+}
+.right #speed{
+    margin-top: 5px;
+    text-transform: lowercase;
+    margin-left: 2px;
+}
+.left #humidity{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.wind{
+    width: 50px;
+    height: 50px;
+}
