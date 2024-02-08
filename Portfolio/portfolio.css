@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(241, 246, 248);
+    overflow-x: hidden;
+}
+nav{
+    background-color: rgb(230, 236, 239);
+    width: 100%;
+    height: 50px;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li{
+    margin-left: 60px;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 2px;
+    transition: height 0.8s;
+    padding: 5px;
+    border-radius: 5px;
+} 
+
+nav ul li:hover{
+    background-color: #1279f0;
+    transition: all 0.7s;
+    position: relative;
+    height: 100%;
+    top: 2px;
+}
+nav ul li:active {
+    border-bottom: 2px solid rgb(255, 115, 0); /* Add a blue underline */
+}
+.home{
+    margin: 10px;
+    display: flex;
+}
+.text{
+    margin: 100px 80px;
+    width: 50%;
+    color: black;
+}
+.text button{
+    padding: 10px 23px;
+    border-radius: 10px;
+    color: black;
+    background-color: #1279f0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgb(88, 98, 234);
+    /* border: 1px solid orange;   
+    box-shadow: 5px 10px 18px #f57b46 inset, 3px 6px 19px 1px #ebb686; */
+}
+.text button::after{
+    content: '\00bb';
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+    top: 0;
+}
+.text button:hover{
+    /* background-color: #ec6930;
+    box-shadow: 5px 10px 18px orange inset, 3px 6px 19px 1px orange;
+    border: 1px solid orange; */
+    transition: 0.5s;
+}
+.text button:hover::after{
+    opacity: 1;
+    right: 0;
+}
+.image img{
+    width: 300px;
+    height: 370px;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top: 70px;
+}
+.about{
+    margin: 80px;
+    transition: all 0.7s;
+}
+.skills{
+    margin: 80px;
+    transition: all 0.7s;
+    display: flex;
+}
+.skills img{
+    margin-top: -20px;
+    margin-left: 100px;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+}
+.projects{
+    margin: 80px;
+    transition: all 0.7s;
+    display: flex;
+}
+.projects .qr{
+    width: 100%;
+    border: 1px solid black;
+    padding: 13px;
+    margin: 10px;
+    background-color: rgb(227, 235, 238);
+    border-radius: 3px;
+}
+.projects .qr:hover,.projects .web:hover{
+    box-shadow: 5px 10px 18px rgb(58, 57, 56);
+}
+.projects .web{
+    width: 100%;
+    border: 1px solid black;
+    padding: 13px;
+    margin: 10px;
+    background-color: rgb(227, 235, 238);
+    border-radius: 3px;
+}
+.contact{
+    margin:80px;
+    margin-left: 100px;
+}
+.h1{
+    text-align: center;
+    color: #1279f0;
+}
+/* .ph{
+    margin-left: 200px;
+}
+.address{
+    margin-left: 200px; 
+}*/
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+.logos{
+    text-align: center;
+    margin-top: -30px;
+}
+footer{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media(max-width:900px){
+    .image img{
+        width: 250px;
+        height: 300px;
+        border-radius: 50%;
+        margin-left:50px;
+        margin-top: 70px;
+    }
+}
+@media(max-width:800px){
+    nav ul li{
+        margin-left: 50px;
+    }
+    .skills img{
+        margin-top: -20px;
+        margin-left: 120px;
+        width: 200px;
+        height: 200px;
+    }
+    .skill{
+        width: 80%;
+        margin-right: -70px;
+        margin-top: -20px;
+    }
+}
+@media (max-width:750px) {
+    nav ul li{
+        margin-left: 40px;
+    }
+    .image img{
+        width: 200px;
+        height: 250px;
+        margin-right: 40px;
+    }
+    .text{
+        margin: 50px;
+    }
+    .about{
+        margin: 50px;
+    }
+    .skills{
+        margin: 50px; 
+    }
+    .skills img{
+        margin-right: -40px;
+    }
+    .skill{
+        width: 80%;
+        margin-right: -130px;
+    }
+    
+}
+@media (max-width:610px) {
+    nav{
+        background-color: aliceblue;
+    }
+    .text{
+        margin: 50px 40px;
+    }
+    .about{
+        margin: 40px;
+    }
+    .skills{
+        margin: 40px; 
+    }
+    .skills img{
+        width: 180px;
+        height: 180px;
+    }
+    .skill{
+        width: 80%;
+        margin-right: -130px;
+    }
+    .logo{
+        width: 45px;
+        height: 45px;
+        margin-left: 20px;
+    }
+    .projects{
+        display: block;
+    }
+    nav ul li a{
+        color: white;
+    }
+    nav ul li{
+        margin-bottom: 50px;
+    }
+    nav ul li:hover{
+        height: 30px;
+    }
+    header .navigation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(63, 61, 61);
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navigation li{
+        padding: 15px;
+        margin: 10px;
+        
+    }
+    header .navigation.active{
+        display: flex;
+    }
+    .toogle{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 11;
+        background-image: url(images/menu.png);
+        background-size: 30px;
+        margin-top: 10px;
+        margin-left: 500px;
+        position: fixed;
+    }
+    .toogle.active{
+        background: url(images/close.png);
+        background-position: center;
+        background-size: 30px;
+    }
+}
+    /* header .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .navigation.active{
+        display: flex;
+    }
+    .toogle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 11;
+        background: url(menu.png);
+        background-position: center;
+        background-size: 30px;
+        margin-left: 45px;
+        margin-top: 10px;
+    }
+    .toogle.active{
+        background: url(close.png);
+        background-position: center;
+        background-size: 30px;
+        margin-left: 45px;
+        margin-top: 10px;
+    } */
+
+@media(max-width:550px){
+    nav{
+        height: 38px;
+    }
+    nav ul li{
+        margin-top: -5px;
+        margin-left: 12px;
+    }
+    .image img{
+        width: 200px;
+        height: 250px;
+        margin-right: 40px;
+    }
+    .text{
+        margin: 30px;
+        margin-right: 10px;
+    }
+    .about{
+        margin: 30px;
+    }
+    .skills{
+        margin: 30px; 
+    }
+    .skills img{
+        width: 180px;
+        height: 180px;
+    }
+    .skill{
+        /* width: 80%;
+        margin-right: -130px; */
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+}

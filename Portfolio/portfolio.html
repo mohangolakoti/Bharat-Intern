@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="toogle" onclick="toogleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="home">
+        <div class="text">
+          <h1>HELLO</h1>
+          <br />
+          <h2>I am Mohan</h2>
+          <br />
+          <p>
+            A <strong>web developer</strong> I specialize in crafting immersive
+            and user-centric web experiences. I am on a journey to master the
+            art of seamless web development.
+          </p>
+          <br />
+          <a href="#"><button class="button">Resume</button></a>
+        </div>
+        <div class="image">
+          <img src="images/port.png" alt="" />
+        </div>
+      </div>
+      <div class="about" id="about">
+        <h1 class="h1">ABOUT</h1>
+        <br />
+        <p>
+          Greetings! I'm Mohan, a forward-thinking web developer and current
+          B.Tech student at Vishnu Institute of Technology. With a strong
+          foundation in Computer Engineering from Andhra Polytechnic, Kakinada,
+          I specialize in crafting immersive and user-centric web experiences.
+          Proficient in HTML, CSS, JavaScript, and currently exploring the
+          intricacies of Node.js, I am on a journey to master the art of
+          seamless web development. Beyond coding, my interest in ethical
+          hacking adds an extra layer to my skill set, contributing to a
+          holistic approach to digital security. This digital hub showcases my
+          diverse projects, reflecting my commitment to staying ahead in the
+          ever-evolving tech landscape. Let's explore innovation together!
+          💡💻🌐
+        </p>
+      </div>
+      <h1 class="h1" id="skills">SKILLS</h1>
+      <div class="skills">
+        <div class="skill">
+          🚀 Web Developer & Tech Enthusiast <br>💻 Tech Stack: <br> Skilled in HTML,
+          CSS, JavaScript, Node.js, Python, C, and Java. Specializing in
+          crafting seamless and user-friendly web applications. <br> 🛠️ Skills: <br> Web
+          Development, HTML, CSS, JavaScript, Node.js, Python, C, Java, Data
+          Structures. <br> 🌐 Aspirations: <br> Passionate about leveraging technology for
+          positive change, aspiring to contribute to the ever-evolving fields of
+          web development.
+        </div>
+        <div>
+          <img src="images/skills.jfif" alt="skills" />
+        </div>
+      </div>
+      <h1 class="h1" id="projects">PROJECTS</h1>
+      <div class="projects">
+        <div class="qr">
+          <h3>QR Code Generation for Patient Details:</h3><br>
+          <p>
+            Embark on a healthcare revolution with our innovative project,
+            utilizing QR codes to streamline patient data management. Experience
+            the efficiency of digital medical records and empower patients with
+            easy access to their health information.
+          </p>
+        </div>
+
+        <div class="web">
+          <h3>Web scrapping:</h3><br>
+          <p>
+            Embark on a healthcare revolution with our innovative project,
+            utilizing QR codes to streamline patient data management. Experience
+            the efficiency of digital medical records and empower patients with
+            easy access to their health information.
+          </p>
+        </div>
+      </div>
+      <h1 class="h1" id="contact">CONTACT</h1>
+      <div class="contact">
+          <!-- Email:ramgolakoti1@gmail.com <br />
+          Mobile:8639169997 <br />
+          Address:1-113, Golakotivaripalem, Modekurru post, Kothapeta Mandal,
+          Konaseema, AP-533229 -->
+          <div class="logos">
+            <a href=""><img src="images/linkedin-logo.png" alt="linkedin" class="logo"></a>
+            <a href="ramgolakoti1@gmail.com"><img src="images/emai-logo.png" alt="" class="logo"></a>
+            <a href=""><img src="images/facebook -logo.png" alt="" class="logo"></a>
+            <a href=""><img src="images/instagram-logo.png" alt="" class="logo"></a>
+            <a href=""><img src="images/twitter-logo.png" alt="" class="logo"></a>
+          </div>
+      </div>
+    </section>
+    <footer>Copyright@MohanGolakoti 2024</footer>
+    <script>
+      function toogleMenu(){
+        const toogle= document.querySelector('.toogle');
+        const navigation=document.querySelector('.navigation');
+        toogle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
